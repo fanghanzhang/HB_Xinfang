@@ -4,14 +4,13 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.pm.PackageManager;
 import android.os.Build;
+import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,12 +22,10 @@ import android.widget.TextView;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.google.gson.Gson;
 import com.ironghui.hb_xinfang.R;
 import com.ironghui.hb_xinfang.application.MyApplication;
-import com.ironghui.hb_xinfang.bean.OpenCaseBean;
 import com.ironghui.hb_xinfang.fragment.HomeFragment;
 import com.ironghui.hb_xinfang.fragment.OpenCaseFragment;
 import com.ironghui.hb_xinfang.fragment.XingfangOrgFragment;
@@ -36,8 +33,6 @@ import com.ironghui.hb_xinfang.fragment.XingfangZhiNanFragment;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.security.Permission;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -65,7 +60,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         initClickListener();
         fullScreen(this);
         requetsPermition();
+        topTitleIv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                exitApp();
+            }
+        });
     }
+
 
     private void requetsPermition() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
@@ -238,6 +240,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         super.onDestroy();
         MyApplication.getHttpQueues().cancelAll("查询tag");
     }
+
     private void resetResource() {
         home_button.setImageResource(R.drawable.ic_sygray);
         oppen_button.setImageResource(R.drawable.ic_algkgray);
