@@ -60,12 +60,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         initClickListener();
         fullScreen(this);
         requetsPermition();
-        topTitleIv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                exitApp();
-            }
-        });
+
     }
 
 

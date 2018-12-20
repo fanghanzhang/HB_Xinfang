@@ -17,7 +17,7 @@ public class BaseActivity extends AppCompatActivity {
 
     }
 
-    private void exitApp() {
+    public void exitApp() {
         activityList.add(this);
         for (Activity activity : activityList) {
             activity.finish();
