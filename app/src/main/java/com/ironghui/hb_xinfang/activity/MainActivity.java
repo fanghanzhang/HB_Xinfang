@@ -238,7 +238,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         super.onDestroy();
         MyApplication.getHttpQueues().cancelAll("查询tag");
     }
-
     private void resetResource() {
         home_button.setImageResource(R.drawable.ic_sygray);
         oppen_button.setImageResource(R.drawable.ic_algkgray);
