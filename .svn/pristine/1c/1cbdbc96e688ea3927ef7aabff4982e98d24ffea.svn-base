@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- <RelativeLayout
+
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_marginLeft="25dp"
+             android:src="@mipmap/ic_client" />
+
+         <TextView
+             android:textSize="16sp"
+             android:textColor="#ffffff"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:text="信访指南" />
+     </RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fragment_zhinan_shape">
+
+        <TextView
+            android:id="@+id/fragment_zhinan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="指南内容"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

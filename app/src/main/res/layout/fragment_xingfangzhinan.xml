@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragment_zhinan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:text="如您需要诉求，请点击“我要写信”，请填写姓名、手机号码、标题、问题属地、是否公开、投诉内容等，
+            然后点击提交键，即可完成诉求如您需要诉求，请点击“我要写信”，请填写姓名、手机号码、标题、问题属地、是否公开、投诉内容等，然后点击提交键，即可完成诉求"
+            android:textColor="#4d4d4d"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="受理范围"
+            android:textColor="#62b6fb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:lineSpacingExtra="4dp"
+            android:text="以下内容的来信属于属于本信箱受理范围：\n（1）对国家机关及其工作人员提出批评、意见和建议；\n (2)对国家机关及其工作人员的违法、失职行为提出控告或检举；\n
+(3)对侵害自身合法权益的行为提出控告或申请。"
+            android:textColor="#4d4d4d"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="不受理范围"
+            android:textColor="#62b6fb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:lineSpacingExtra="4dp"
+            android:text="以下内容的来信不属于属于本信箱受理范围：\n（1）对国家机关及其工作人员提出批评、意见和建议；\n (2)对国家机关及其工作人员的违法、失职行为提出控告或检举；\n
+(3)对侵害自身合法权益的行为提出控告或申请。"
+            android:textColor="#4d4d4d"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/line_bg" />
+    </LinearLayout>
+
+
+</LinearLayout>

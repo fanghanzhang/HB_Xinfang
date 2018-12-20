@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">@color/app_title_bg</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="app_title_bg">#126ac7</color>
+    <color name="text_pjia_color">#1468c8</color>
+</resources>

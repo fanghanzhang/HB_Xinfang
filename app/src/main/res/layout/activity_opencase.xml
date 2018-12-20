@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toptitlelayout"></include>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fragment_zhinan_shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/opencase_xq_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="22dp"
+            android:text="湖北省武汉市信访局接待上访量累计突破0的记录较其它市早1天"
+            android:textColor="#222222"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="发布时间:"
+                android:textColor="#b3b3b3"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/opencase_xq_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="2018-12-12 00:10:00"
+                android:textColor="#808080"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#cccccc" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/fragment_zhinan_shape"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:text="案例公开的内容案例公开的内容案例公开的内容案例公开的内容案例公开的内容案例公开"
+            android:textColor="#999999"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

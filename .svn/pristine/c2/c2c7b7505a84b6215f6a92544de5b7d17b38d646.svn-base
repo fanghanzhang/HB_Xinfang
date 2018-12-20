@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="#f5f5f7"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/home_button_ll"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/ic_sygray" />
+
+        <TextView
+            android:id="@+id/home_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="首页"
+            android:textColor="#cd9aff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/oppen_button_ll"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/oppen_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/ic_algkgray" />
+
+        <TextView
+            android:id="@+id/open_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="案例公开"
+            android:textColor="#9695a3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/xinfang_br_ll"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/xinfang_br"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/ic_xfjggray" />
+
+        <TextView
+            android:id="@+id/xinfang_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="信访机构"
+            android:textColor="#9695a3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/xinfang_zhinan_ll"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/xinfang_zhinan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:clickable="false"
+            android:src="@drawable/ic_xfzngray" />
+
+        <TextView
+            android:id="@+id/xinfang_zhinantextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="信访指南"
+            android:textColor="#9695a3" />
+    </LinearLayout>
+
+</LinearLayout>
